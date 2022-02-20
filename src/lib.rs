@@ -5,7 +5,7 @@ use anchor_spl::token::{self, Mint, Token, TokenAccount};
 declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
 
 #[program]
-pub mod permissionless_bounty_network {
+pub mod bounty_network {
     use super::*;
     pub fn initialize_bounty_network(ctx: Context<InitializeBountyNetwork>, nonce: u8) -> ProgramResult {
         let bounty_network = &mut ctx.accounts.bounty_network;
